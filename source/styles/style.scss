@@ -1,0 +1,102 @@
+@use './reset.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: start;
+    background-image: linear-gradient(to top,#5AA4C9, #9568E1);
+    color: #fff;
+    padding: 10%;
+}
+
+.card {
+    display: flex;
+    padding: 10%;
+}
+
+img {
+    margin-top: 3%;
+}
+
+form {
+    width: 500px;
+    margin-right: 20%;
+}
+
+.container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input {
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-top: 1rem;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.container form input:focus {
+    border: none;
+    background-color: transparent;
+}
+
+form p {
+    margin-top: 16px;
+    color: #2f2f2f;
+    font-weight: bold;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form button {
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 2rem;
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b8b8b;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+form button:hover {
+    background-color: #bbbbbb;
+}
+
+@media (max-width: 1075px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form {
+        margin: 0;
+        margin-top: 100px;
+        padding: 16px;
+        width: 400px;
+    }
+    .container img {
+        padding: 16px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 417px) {
+    form {
+        width: auto;
+    }
+    img {
+        width: auto;
+        
+    }
+}
